@@ -8,6 +8,13 @@
 | Fake | ✅ | ❌ | ✅ (упрощ.) | In-memory репозиторий |
 - Stub vs Mock: mock проверяет как вызывали. Spy vs Mock: spy проверяем после, mock — ожидания до выполнения.
 
+Простыми словами и когда что брать:
+- Dummy — просто заткнуть параметр, не участвует в логике (когда аргумент обязателен).
+- Stub — вернуть нужные данные, не проверяя, как вызывали (когда тестируем поведение от возвращаемых значений).
+- Mock — задать ожидания вызовов/аргументов заранее (когда важно, что и сколько раз вызвали).
+- Spy — записать вызовы, проверить после (когда важно, как вызывали, но удобнее проверять постфактум).
+- Fake — упрощённая рабочая реализация (in-memory БД/HTTP-клиент), когда нужен реальный эффект без внешних зависимостей.
+
 ```php
 // Stub
 $mailer = $this->createStub(Mailer::class);
@@ -23,4 +30,18 @@ class InMemoryUserRepo implements UserRepository {
     public function save(User $u): void { $this->items[$u->id] = $u; }
     public function find(int $id): ?User { return $this->items[$id] ?? null; }
 }
+
+// Spy (пример: собираем вызовы)
+class SpyMailer implements Mailer {
+    public array $sent = [];
+    public function send(string $to, string $msg): bool {
+        $this->sent[] = [$to, $msg];
+        return true;
+    }
+}
+$spy = new SpyMailer();
+$service = new Notifier($spy);
+$service->notify('a@b.c','Hi');
+$this->assertCount(1, $spy->sent);
+$this->assertSame(['a@b.c','Hi'], $spy->sent[0]);
 ```
