@@ -1,0 +1,32 @@
+{
+  "palette": {
+    "seed": 0,
+    "selected": "custom",
+    "custom": "e12729-f37324-f8cc1b-72b043-007f4e"
+  },
+  "mixColors": true,
+  "transition": true,
+  "accessibility": {
+    "highTextContrast": false
+  },
+  "knownTags": {
+    "topic": 1,
+    "topic/php": 1,
+    "difficulty": 2,
+    "difficulty/senior": 1,
+    "probability": 3,
+    "probability/low": 1,
+    "difficulty/junior": 2,
+    "probability/high": 2,
+    "topic/database": 2,
+    "difficulty/middle": 3,
+    "topic/programming": 3,
+    "topic/symfony": 4,
+    "probability/medium": 3,
+    "topic/laravel": 5,
+    "flashcard": 4,
+    "review": 5,
+    "code-review": 6
+  },
+  "_version": 3
+}

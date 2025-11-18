@@ -1,0 +1,241 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "theory/tools/message-brokers/Сравнение брокеров.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Сравнение брокеров"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e79fbcab19cf3e0b",
+    "type": "split",
+    "children": [
+      {
+        "id": "82874ae6e1faac13",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4fc4a6e0cf8b037d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "6374321ab4fac6b9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "идемпо",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "97ceed35ad643f3d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 426.5
+  },
+  "right": {
+    "id": "d65573fc819359e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "eec6bba6f452b5ab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e2e899153810a546",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки"
+            }
+          },
+          {
+            "id": "5ff6d3ccd330a2bc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки"
+            }
+          },
+          {
+            "id": "f95b21d6420e5f6b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "10e6d231a6a96553",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура"
+            }
+          },
+          {
+            "id": "a9442b739cfa46b9",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "54b16c7dcf1cf898",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {},
+              "icon": "history",
+              "title": "History"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 275.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "homepage:Open homepage": false,
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "bases:Создать новую базу": false,
+      "obsidian-git:Open Git source control": false,
+      "terminal:Open terminal": false
+    }
+  },
+  "active": "a9442b739cfa46b9",
+  "lastOpenFiles": [
+    "theory/tools/message-brokers/RabbitMQ.md",
+    "theory/tools/message-brokers/Kafka.md",
+    "theory/tools/message-brokers/Сравнение брокеров.md",
+    "theory/tools/Prometheus.md",
+    "theory/tools/message-brokers",
+    "theory/tools/Kafka.md",
+    "theory/tools/RabbitMQ.md",
+    "🧭 Домашняя страница.md",
+    "theory/php/composer/Проверки композера.md",
+    "theory/php/composer/composer.md",
+    "theory/php/composer/🛡Composer audit.md",
+    "theory/php/composer/🧱 best practices.md",
+    "theory/php/composer/⚙️ Composer Autoload и оптимизация.md",
+    "theory/php/Оптимизация PHP.md",
+    "theory/php/php-fpm/attachments/Pasted image 20251103192005.png",
+    "roadmap/stages/stage-1-testovoe.md",
+    "theory/auth.md",
+    "roadmap/stages/ai.md",
+    "roadmap/README.md",
+    "roadmap/GIT_WORKFLOW.md",
+    "roadmap/stages",
+    "roadmap",
+    "theory/php/альтернативные рантаймы/RoadRunner.md",
+    "theory/linux/OOM killer.md",
+    "theory/db/Пессимистичная группировка (Pessimistic Locking).md",
+    "theory/db/Оптимистичная группировка (Optimistic Locking).md",
+    "theory/db/Race Condition (Гонка состояний).md",
+    "theory/backend/Сисдиз.md",
+    "theory/tools/grafana/Grafana.md",
+    "theory/php/Standart PHP Library (SPL).md",
+    "theory/auth",
+    "theory/backend",
+    "theory/tools/git/attachments/Pasted image 20251107170818.png",
+    "theory/tools/git/attachments",
+    "theory/cache",
+    "theory/архитектура/04_security",
+    "theory/архитектура/03_distributed",
+    "theory/архитектура/02_system-architecture",
+    "theory/tools/grafana/attachments/Pasted image 20251104155837.png",
+    "Pasted image 20251030155151.png",
+    "theory/tools/php-fpm/attachments/Pasted image 20251103191927.png",
+    "attachments/Pasted image 20251103190259.png",
+    "Pasted image 20251030154539.png",
+    "Pasted image 20251030155008.png",
+    "Notion/files/image.png",
+    "Notion/files/image 2 2.png"
+  ]
+}
