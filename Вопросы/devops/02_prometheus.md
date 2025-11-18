@@ -4,6 +4,10 @@
 - Экспортеры: node_exporter, blackbox_exporter, php-fpm_exporter и др.
 - Стандарт де‑факто для Kubernetes/облачных инсталляций.
 
+## Простыми словами
+- Сам опрашивает приложения по `/metrics` и хранит числа по времени.
+- Умеет алертить через Alertmanager и рисовать графы (обычно через Grafana).
+
 ```php
 // Простой /metrics
 echo "http_requests_total{path=\"/\"} 42\n";

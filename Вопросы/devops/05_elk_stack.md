@@ -3,6 +3,10 @@
 - Используется для централизованного сбора логов, анализа, SIEM, DevOps/SRE мониторинга.
 - Часто дополняют Beats (агенты), Fluentd/Graylog/OpenSearch — альтернативы.
 
+## Простыми словами
+- Система «принял логи → разобрал → сложил → искал/рисовал».
+- Elasticsearch хранит/ищет, Logstash/Beats собирают, Kibana ищет и показывает.
+
 ```bash
 # Filebeat -> Logstash
 filebeat.inputs:
