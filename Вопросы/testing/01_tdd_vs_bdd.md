@@ -1,0 +1,19 @@
+# BDD vs TDD
+- TDD: пишем юнит‑тест → он красный → минимальный код → рефакторинг (Red–Green–Refactor). Фокус на коде и быстром фидбэке.
+- BDD: описывает поведение с точки зрения пользователя/бизнеса (Given/When/Then, Gherkin). Часто применяют для UI/API и живой документации.
+- Инструменты: TDD → PHPUnit, PyTest; BDD → Behat/Cucumber/SpecFlow.
+
+```php
+// TDD: тест перед кодом
+public function test_sum(): void {
+    $this->assertSame(5, sum(2, 3));
+}
+```
+
+```gherkin
+# BDD: сценарий
+Scenario: Пользователь успешно входит
+  Given Я на странице входа
+  When Я ввожу логин "user" и пароль "pass"
+  Then Я вижу главную страницу
+```

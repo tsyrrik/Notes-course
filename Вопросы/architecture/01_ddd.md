@@ -1,0 +1,55 @@
+# DDD (Domain-Driven Design)
+Подход, где в центре предметная область и модель, отражающая её правила. Предложен Эриком Эвансом (*Domain-Driven Design*, 2003).
+
+## Основные идеи
+1. Фокус на домене: понимание процессов/правил вместе с бизнес-экспертами.
+2. Ubiquitous Language: общий словарь терминов (в общении и коде).
+3. Модель домена не зависит от БД/фреймворков/UI, отражает бизнес-логику.
+4. Слои:
+   - Domain Layer — сущности, value объекты, агрегаты, доменные сервисы.
+   - Application Layer — use-case'ы, оркестрация.
+   - Infrastructure Layer — БД, API, шины.
+   - Interface/UI Layer — представление данных.
+
+## Элементы модели
+| Элемент | Описание |
+| --- | --- |
+| Entity | Объект с идентичностью (ID), живёт во времени. |
+| Value Object | Без ID, определяется значениями (Money, Address). |
+| Aggregate | Группа сущностей/VO, изменяется как целое; держит инварианты. |
+| Aggregate Root | Точка входа в агрегат, только через неё правим данные. |
+| Repository | Абстракция доступа к агрегатам. |
+| Domain Service | Бизнес-логика вне конкретной сущности. |
+| Application Service | Оркестрация use-case'а, обращается к домену/репо. |
+| Factory | Создание сложных объектов/агрегатов. |
+
+## Отличительные свойства
+- Модель привязана к бизнесу, единый язык, изоляция бизнес-логики.
+- Инварианты внутри агрегатов, независимость от инфраструктуры.
+- Поддерживает сложные правила, удобно при частых изменениях логики.
+
+## Когда применять
+- Сложный домен, много правил/исключений, логика часто меняется.
+- Несколько команд/ролей, нужен общий язык.
+- Нужна чёткая слоистая архитектура и стабильная бизнес-модель.
+- Не подходит для простых CRUD/сервисов без логики — внесёт лишнюю сложность.
+
+```php
+// Entity + Value Object
+class Order {
+    public function __construct(private OrderId $id, private Money $total) {}
+    public function id(): OrderId { return $this->id; }
+    public function total(): Money { return $this->total; }
+}
+
+// Repository (абстракция хранилища)
+interface OrderRepository {
+    public function byId(OrderId $id): ?Order;
+    public function save(Order $order): void;
+}
+
+// Value Object
+class Money {
+    public function __construct(public int $amount, public string $currency) {}
+}
+```
