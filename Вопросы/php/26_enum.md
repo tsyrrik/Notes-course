@@ -12,3 +12,11 @@ enum Status: string {
 - Unit enums или backed (`: string|int`).
 - Методы: `cases()`, `from()/tryFrom()`.
 - Создавать через `new` нельзя, неизменяемы.
+
+Пример использования
+```php
+enum Status: string { case PUBLISHED='published'; case DRAFT='draft'; }
+
+$status = Status::tryFrom('draft') ?? Status::DRAFT;
+if ($status === Status::PUBLISHED) { /* ... */ }
+```

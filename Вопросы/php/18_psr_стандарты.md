@@ -6,3 +6,13 @@
 - PSR-7 — HTTP messages.
 - PSR-11 — контейнер зависимостей.
 - PSR-12 — стиль и форматирование.
+
+Пример автозагрузки PSR-4 (composer.json)
+```json
+{
+  "autoload": { "psr-4": { "App\\\\": "src/" } }
+}
+```
+```bash
+composer dump-autoload
+```
