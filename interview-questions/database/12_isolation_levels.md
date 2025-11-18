@@ -1,0 +1,6 @@
+# Уровни изоляции и аномалии
+- Read Uncommitted: грязные чтения, неповторяемые чтения, фантомы (в PostgreSQL ведёт себя как Read Committed).
+- Read Committed: нет грязных чтений; есть неповторяемые и фантомы.
+- Repeatable Read: нет грязных/неповторяемых; фантомы защищены в PostgreSQL.
+- Serializable: эквивалентно последовательному выполнению (возможны serialization failures, нужен retry).
+Аномалии: Dirty Read, Nonrepeatable Read, Phantom.

@@ -1,0 +1,2 @@
+# OpenSearch
+Форк Elasticsearch 7.10 под Apache 2.0 (AWS + комьюнити). Используется для поиска/логов/SIEM. Совместим с ES 7.10 API, имеет OpenSearch Dashboards, открытая лицензия, масштабируем.
