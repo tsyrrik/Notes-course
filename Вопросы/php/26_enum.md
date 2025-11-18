@@ -30,3 +30,6 @@ enum Status: string { case PUBLISHED='published'; case DRAFT='draft'; }
 $status = Status::tryFrom('draft') ?? Status::DRAFT;
 if ($status === Status::PUBLISHED) { /* ... */ }
 ```
+
+## Простыми словами
+- Enum даёт фиксированный набор именованных значений с типовой безопасностью вместо «магических строк/чисел». Есть unit (без значения) и backed (со строкой/числом).
