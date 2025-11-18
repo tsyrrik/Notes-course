@@ -1,2 +1,2 @@
 # Что ставит Composer внутри
-`composer install` создаёт `vendor/` и файлы `autoload.php`, `autoload_runtime.php`, плюс зависимости. После `require_once 'vendor/autoload.php';` автозагрузка работает для зависимостей и ваших классов (если прописаны в autoload секции).
+Простыми словами: `composer install` кладёт зависимости в `vendor/` и генерирует файлы автозагрузки (`vendor/autoload.php`, `autoload_runtime.php`). Подключаете `vendor/autoload.php` — классы пакетов и ваши (из секций autoload) будут подгружаться автоматически.
