@@ -47,12 +47,12 @@ RPC — это **прозрачная функция через сеть**.
 
 ### Разновидности
 
-|Вариант|Формат|Пример|
-|---|---|---|
-|**JSON-RPC**|JSON через HTTP|`{"method": "sum", "params": [1,2], "id":1}`|
-|**XML-RPC**|XML через HTTP|`<methodCall><methodName>sum</methodName>...`|
-|**gRPC**|Protobuf через HTTP/2|Быстрый бинарный вариант от Google|
-|**SOAP**|XML + WSDL|Тяжёлый корпоративный наследник RPC|
+| Вариант      | Формат                | Пример                                        |
+| ------------ | --------------------- | --------------------------------------------- |
+| **JSON-RPC** | JSON через HTTP       | `{"method": "sum", "params": [1,2], "id":1}`  |
+| **XML-RPC**  | XML через HTTP        | `<methodCall><methodName>sum</methodName>...` |
+| **gRPC**     | Protobuf через HTTP/2 | Быстрый бинарный вариант от Google            |
+| **SOAP**     | XML + WSDL            | Тяжёлый корпоративный наследник RPC           |
 
 ---
 

@@ -83,16 +83,7 @@ if (file_exists($path)) {
     `FOR UPDATE` ставит блокировку на строку, не давая другому потоку прочитать старое значение.
     
 2. **Optimistic Locking (оптимистическая блокировка)**  
-    Добавляем поле `version` и проверяем, не изменилось ли оно:
-    
-    ```sql
-    UPDATE accounts
-    SET balance = balance + 10, version = version + 1
-    WHERE id = 1 AND version = 3;
-    ```
-    
-    Если `version` не совпала — кто-то уже обновил запись → повторяем попытку.
-    
+   [optimistic_locking](Оптимистичная%20блокировка%20(Optimistic%20Locking).md)
 3. **Atomic operations / UPSERT**  
     Используем атомарные SQL-операции:
     

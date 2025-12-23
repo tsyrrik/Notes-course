@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theory/tools/message-brokers/Сравнение брокеров.md",
+                "file": "theory/db/Виды пагинации.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Сравнение брокеров"
+              "title": "Виды пагинации"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "идемпо",
+                "query": "курсо",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Закладки"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -189,46 +190,46 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "a9442b739cfa46b9",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "theory/tools/message-brokers/RabbitMQ.md",
-    "theory/tools/message-brokers/Kafka.md",
-    "theory/tools/message-brokers/Сравнение брокеров.md",
-    "theory/tools/Prometheus.md",
-    "theory/tools/message-brokers",
-    "theory/tools/Kafka.md",
-    "theory/tools/RabbitMQ.md",
-    "🧭 Домашняя страница.md",
-    "theory/php/composer/Проверки композера.md",
-    "theory/php/composer/composer.md",
-    "theory/php/composer/🛡Composer audit.md",
-    "theory/php/composer/🧱 best practices.md",
-    "theory/php/composer/⚙️ Composer Autoload и оптимизация.md",
-    "theory/php/Оптимизация PHP.md",
-    "theory/php/php-fpm/attachments/Pasted image 20251103192005.png",
-    "roadmap/stages/stage-1-testovoe.md",
-    "theory/auth.md",
-    "roadmap/stages/ai.md",
-    "roadmap/README.md",
-    "roadmap/GIT_WORKFLOW.md",
-    "roadmap/stages",
-    "roadmap",
-    "theory/php/альтернативные рантаймы/RoadRunner.md",
-    "theory/linux/OOM killer.md",
+    "theory/db/Курсоры в базах данных.md",
+    "theory/db/Оптимистичная блокировка (Optimistic Locking).md",
     "theory/db/Пессимистичная группировка (Pessimistic Locking).md",
-    "theory/db/Оптимистичная группировка (Optimistic Locking).md",
-    "theory/db/Race Condition (Гонка состояний).md",
-    "theory/backend/Сисдиз.md",
-    "theory/tools/grafana/Grafana.md",
-    "theory/php/Standart PHP Library (SPL).md",
-    "theory/auth",
-    "theory/backend",
+    "🧭 Домашняя страница.md",
+    "theory/tools/message-brokers/Сравнение брокеров.md",
+    "theory/сеть/архитектурные стили взаимодействия по сети/RPC (Remote Procedure Call).md",
+    "theory/сеть/архитектурные стили взаимодействия по сети/gRPC.md",
+    "theory/db/WAL (Write-Ahead Log).md",
+    "theory/php/альтернативные рантаймы/Swoole.md",
+    "theory/php/альтернативные рантаймы/FrankenPHP.md",
+    "theory/linux/Переключение пользователей и root.md",
+    "theory/auth/Сессии (Sessions).md",
+    "theory/auth/JWT (JSON Web Token).md",
+    "theory/архитектура/02_system-architecture/Feature flags.md",
+    "theory/tools/docker/Именованный том vs bind-mount.md",
+    "theory/php/альтернативные рантаймы/Temporal.md",
+    "theory/php/альтернативные рантаймы/RoadRunner.md",
+    "theory/backend/CNCF (Cloud Native Computing Foundation).md",
+    "theory/архитектура/05_low-level-patterns/07_Согласованность/Cache-Aside vs Write-Through.md",
+    "theory/архитектура/05_low-level-patterns/06_Тестируемость/Contract Tests — CDC.md",
+    "theory/архитектура/05_low-level-patterns/05_Развёртываемость/Blue-Green — Canary — Shadow.md",
+    "theory/архитектура/05_low-level-patterns/04_Эволюционность и интеграция/Outbox + Inbox.md",
+    "theory/архитектура/05_low-level-patterns/04_Эволюционность и интеграция/Schema — Message Versioning.md",
+    "theory/архитектура/05_low-level-patterns/04_Эволюционность и интеграция/API Gateway — BFF.md",
+    "theory/архитектура/05_low-level-patterns/04_Эволюционность и интеграция/Strangler Fig.md",
+    "theory/архитектура/05_low-level-patterns/03_Переиспользование/Sidecar.md",
+    "theory/архитектура/05_low-level-patterns/07_Согласованность",
+    "theory/архитектура/05_low-level-patterns/06_Тестируемость",
+    "theory/архитектура/05_low-level-patterns/05_Развёртываемость",
+    "theory/архитектура/05_low-level-patterns/04_Эволюционность и интеграция",
+    "theory/архитектура/05_low-level-patterns/03_Переиспользование",
+    "theory/архитектура/05_low-level-patterns/02_Безопасность",
+    "theory/архитектура/05_low-level-patterns/01_Надёжность",
+    "theory/архитектура/05_low-level-patterns",
+    "theory/tools/message-brokers",
+    "theory/php/php-fpm/attachments/Pasted image 20251103192005.png",
+    "roadmap/stages",
     "theory/tools/git/attachments/Pasted image 20251107170818.png",
-    "theory/tools/git/attachments",
-    "theory/cache",
-    "theory/архитектура/04_security",
-    "theory/архитектура/03_distributed",
-    "theory/архитектура/02_system-architecture",
     "theory/tools/grafana/attachments/Pasted image 20251104155837.png",
     "Pasted image 20251030155151.png",
     "theory/tools/php-fpm/attachments/Pasted image 20251103191927.png",
