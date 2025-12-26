@@ -1,6 +1,10 @@
-# Service Providers
+## Вопрос: Service Providers
+Версия: Laravel 11 (актуально; базовые принципы применимы к 10+).
 
-Простыми словами: Service Provider — место, где регистрируются сервисы, middleware, события, конфиг.
+## Простой ответ
+Service Provider — место, где регистрируются сервисы, middleware, события, конфиг.
+
+## Ответ
 Точки входа для регистрации сервисов/настроек.
 ```php
 class CustomServiceProvider extends ServiceProvider {

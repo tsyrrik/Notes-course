@@ -1,7 +1,11 @@
 # Вопросы по фреймворкам (Laravel и Symfony)
 
+## Простой ответ
+Eloquent (Active Record) — модель сама сохраняет себя (`save/delete`). Doctrine (Data Mapper) — сущность «не знает» про БД, сохраняет `EntityManager`.
+
+## Ответ
 ## Doctrine (Data Mapper) vs Active Record (Eloquent)
-Простыми словами: Eloquent (Active Record) — модель сама сохраняет себя (`save/delete`). Doctrine (Data Mapper) — сущность «не знает» про БД, сохраняет `EntityManager`.
+
 - Active Record: логика сохранения внутри модели; проще старт, жёстче связка с БД.
 - Data Mapper: Entity + Unit of Work/EntityManager; гибче, чище для DDD.
 

@@ -1,7 +1,10 @@
-# Безопасность (firewalls, auth, access control)
+## Вопрос: Безопасность (firewalls, auth, access control)
+Версия: Symfony 7.x (LTS 6.4), синтаксис и подходы 6.4+.
 
-Простыми словами: Security компонент настраивает правила входа, firewalls, user providers, access control. Поддерживает сессии, JWT (через пакеты), remember-me, роли/векселя.
+## Простой ответ
+Security компонент настраивает правила входа, firewalls, user providers, access control. Поддерживает сессии, JWT (через пакеты), remember-me, роли/векселя.
 
+## Ответ
 ```yaml
 # config/packages/security.yaml (пример)
 security:

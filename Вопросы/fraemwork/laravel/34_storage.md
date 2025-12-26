@@ -1,6 +1,10 @@
-# Filesystem / Storage
+## Вопрос: Filesystem / Storage
+Версия: Laravel 11 (актуально; базовые принципы применимы к 10+).
 
-Простыми словами: Storage — единый API для локальных дисков и облачных (S3/FTP).
+## Простой ответ
+Storage — единый API для локальных дисков и облачных (S3/FTP).
+
+## Ответ
 Абстракция над файловыми системами (Flysystem). Диски задаются в `config/filesystems.php`.
 ```php
 use Illuminate\Support\Facades\Storage;

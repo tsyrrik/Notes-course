@@ -1,7 +1,10 @@
-# Формы
+## Вопрос: Формы
+Версия: Symfony 7.x (LTS 6.4), синтаксис и подходы 6.4+.
 
-Простыми словами: Form Component строит формы, мапит данные на объекты, валидирует и рендерит через Twig.
+## Простой ответ
+Form Component строит формы, мапит данные на объекты, валидирует и рендерит через Twig.
 
+## Ответ
 ```php
 class UserType extends AbstractType {
     public function buildForm(FormBuilderInterface $builder, array $options) {

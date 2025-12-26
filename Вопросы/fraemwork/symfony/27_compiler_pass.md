@@ -1,7 +1,10 @@
-# Compiler Pass
+## Вопрос: Compiler Pass
+Версия: Symfony 7.x (LTS 6.4), синтаксис и подходы 6.4+.
 
-Простыми словами: хук на этапе компиляции контейнера DI — позволяет модифицировать определения сервисов, находить теги и собирать их.
+## Простой ответ
+хук на этапе компиляции контейнера DI — позволяет модифицировать определения сервисов, находить теги и собирать их.
 
+## Ответ
 ```php
 class CustomCompilerPass implements CompilerPassInterface {
     public function process(ContainerBuilder $container): void {

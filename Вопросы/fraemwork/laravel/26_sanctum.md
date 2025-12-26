@@ -1,6 +1,10 @@
-# Аутентификация API (Sanctum)
+## Вопрос: Аутентификация API (Sanctum)
+Версия: Laravel 11 (актуально; базовые принципы применимы к 10+).
 
-Простыми словами: Sanctum выдаёт токены для API и проверяет их на запросах.
+## Простой ответ
+Sanctum выдаёт токены для API и проверяет их на запросах.
+
+## Ответ
 ```bash
 composer require laravel/sanctum
 php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"

@@ -1,6 +1,10 @@
-# Middleware
+## Вопрос: Middleware
+Версия: Laravel 11 (актуально; базовые принципы применимы к 10+).
 
-Простыми словами: Middleware — фильтры запросов (auth, логирование, CORS, throttle) до/после контроллера.
+## Простой ответ
+Middleware — фильтры запросов (auth, логирование, CORS, throttle) до/после контроллера.
+
+## Ответ
 Прослойки для фильтрации запросов.
 ```bash
 php artisan make:middleware CheckAge

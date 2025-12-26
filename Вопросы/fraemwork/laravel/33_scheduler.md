@@ -1,6 +1,10 @@
-# Планировщик задач (Scheduler)
+## Вопрос: Планировщик задач (Scheduler)
+Версия: Laravel 11 (актуально; базовые принципы применимы к 10+).
 
-Простыми словами: Scheduler — cron в коде, один системный cron запускает все запланированные задачи.
+## Простой ответ
+Scheduler — cron в коде, один системный cron запускает все запланированные задачи.
+
+## Ответ
 Код расписания в `app/Console/Kernel.php`, запускается одним cron `* * * * * php artisan schedule:run`.
 ```php
 protected function schedule(Schedule $schedule) {

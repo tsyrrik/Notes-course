@@ -1,7 +1,10 @@
-# Как делать API в Symfony
+## Вопрос: Как делать API в Symfony
+Версия: Symfony 7.x (LTS 6.4), синтаксис и подходы 6.4+.
 
-Простыми словами: можно руками через контроллеры (JsonResponse/serializer) или через API Platform. Базовый ручной пример:
+## Простой ответ
+можно руками через контроллеры (JsonResponse/serializer) или через API Platform. Базовый ручной пример:
 
+## Ответ
 ```php
 #[Route('/api/users', methods: ['GET'])]
 public function index(UserRepository $repo): JsonResponse {

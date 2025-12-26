@@ -1,6 +1,10 @@
-# Тестирование
+## Вопрос: Тестирование
+Версия: Laravel 11 (актуально; базовые принципы применимы к 10+).
 
-Простыми словами: Тесты проверяют, что фичи и логика работают как нужно (feature/unit/HTTP).
+## Простой ответ
+Тесты проверяют, что фичи и логика работают как нужно (feature/unit/HTTP).
+
+## Ответ
 ```bash
 php artisan make:test UserTest          # Feature
 php artisan make:test UserServiceTest --unit

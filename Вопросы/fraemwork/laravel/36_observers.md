@@ -1,6 +1,10 @@
-# Model Observers
+## Вопрос: Model Observers
+Версия: Laravel 11 (актуально; базовые принципы применимы к 10+).
 
-Простыми словами: Observer ловит события модели (creating/updated) и выносит логику из модели.
+## Простой ответ
+Observer ловит события модели (creating/updated) и выносит логику из модели.
+
+## Ответ
 Переносят обработку событий модели в отдельный класс.
 ```bash
 php artisan make:observer UserObserver --model=User

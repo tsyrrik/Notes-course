@@ -1,7 +1,10 @@
-# Кэширование и HTTP cache
+## Вопрос: Кэширование и HTTP cache
+Версия: Symfony 7.x (LTS 6.4), синтаксис и подходы 6.4+.
 
-Простыми словами: компонент Cache (PSR-6/16) + HTTP cache заголовки для ответа; можно использовать встроенный reverse-proxy HttpCache или Varnish.
+## Простой ответ
+компонент Cache (PSR-6/16) + HTTP cache заголовки для ответа; можно использовать встроенный reverse-proxy HttpCache или Varnish.
 
+## Ответ
 ```php
 // Cache компонент
 $value = $cache->get('users', function(ItemInterface $item) {

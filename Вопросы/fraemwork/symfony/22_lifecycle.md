@@ -1,7 +1,10 @@
-# Жизненный цикл HTTP-запроса в Symfony
+## Вопрос: Жизненный цикл HTTP-запроса в Symfony
+Версия: Symfony 7.x (LTS 6.4), синтаксис и подходы 6.4+.
 
-Простыми словами: Request приходит в HttpKernel, проходит через событие (kernel.request), роутер выбирает контроллер, выполняется контроллер, формируется Response, проходят завершающие события (kernel.response/terminate), ответ отправляется.
+## Простой ответ
+Request приходит в HttpKernel, проходит через событие (kernel.request), роутер выбирает контроллер, выполняется контроллер, формируется Response, проходят завершающие события (kernel.response/terminate), ответ отправляется.
 
+## Ответ
 Этапы:
 1) client → front controller (`public/index.php`) создаёт Request.  
 2) Kernel dispatches `kernel.request` (listeners могут изменить/создать Response).  

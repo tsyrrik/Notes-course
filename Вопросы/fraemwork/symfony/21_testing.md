@@ -1,7 +1,10 @@
-# Тестирование
+## Вопрос: Тестирование
+Версия: Symfony 7.x (LTS 6.4), синтаксис и подходы 6.4+.
 
-Простыми словами: PHPUnit для unit/feature; WebTestCase для запросов; Panther для браузерных тестов.
+## Простой ответ
+PHPUnit для unit/feature; WebTestCase для запросов; Panther для браузерных тестов.
 
+## Ответ
 ```bash
 php bin/console make:test UserControllerTest
 ```

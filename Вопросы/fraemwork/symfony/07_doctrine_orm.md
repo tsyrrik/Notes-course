@@ -1,7 +1,10 @@
-# Doctrine ORM (основы)
+## Вопрос: Doctrine ORM (основы)
+Версия: Symfony 7.x (LTS 6.4), синтаксис и подходы 6.4+.
 
-Простыми словами: Doctrine — ORM Data Mapper; сущности — обычные классы, маппинг через атрибуты/аннотации/YAML, запросы через репозитории и QueryBuilder.
+## Простой ответ
+Doctrine — ORM Data Mapper; сущности — обычные классы, маппинг через атрибуты/аннотации/YAML, запросы через репозитории и QueryBuilder.
 
+## Ответ
 ```php
 #[ORM\Entity]
 class User {

@@ -1,7 +1,10 @@
-# HTTP Client
+## Вопрос: HTTP Client
+Версия: Symfony 7.x (LTS 6.4), синтаксис и подходы 6.4+.
 
-Простыми словами: встроенный клиент для запросов к внешним API с ретраями, таймаутами, пулами и удобным API.
+## Простой ответ
+встроенный клиент для запросов к внешним API с ретраями, таймаутами, пулами и удобным API.
 
+## Ответ
 ```php
 class ExternalApiService {
     public function __construct(private HttpClientInterface $client) {}
