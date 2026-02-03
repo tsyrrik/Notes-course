@@ -1,5 +1,5 @@
 ## Вопрос: Жизненный цикл HTTP-запроса в Laravel
-Версия: Laravel 11 (актуально; базовые принципы применимы к 10+).
+Версия: Laravel 12.x (актуальная), 11.x в security-fixes; PHP 8.2–8.4.
 
 ## Простой ответ
 браузер → `public/index.php` → приложение/контейнер → HTTP-ядро → bootstrappers → middleware → маршрутизатор → контроллер/замыкание → ответ → обратный проход через middleware → отправка в браузер.
@@ -59,3 +59,14 @@
 - Конфиги: `config/*`
 - Глобальные middleware: `$middleware` в Kernel
 - Группы/маршрутные middleware: `$middlewareGroups`, `$middlewareAliases`
+
+## Примеры
+
+1. Middleware → Controller → Response.
+2. Service Providers `register()` → `boot()`.
+3. Kernel выполняет стек middleware.
+
+## Доп. теория
+
+1. Bootstrap грузит конфиг, провайдеры и контейнер.
+2. HTTP‑kernel формирует pipeline middleware.

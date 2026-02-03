@@ -64,3 +64,13 @@ spec:
 - `kubectl logs -f pod/<name> -c <container>`.
 - `kubectl rollout history|status|undo deployment/<name>`.
 - `kubectl port-forward svc/web 8080:80`.
+
+## Примеры
+
+1. Deployment на 3 реплики с rolling update и `readinessProbe`.
+2. Service + Ingress для публикации приложения.
+
+## Доп. теория
+
+1. Kubernetes работает в модели «desired state»: контроллеры стремятся к описанному состоянию.
+2. Расширяемость через CRD/Operators позволяет описывать собственные сущности.

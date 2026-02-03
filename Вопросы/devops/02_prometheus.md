@@ -18,3 +18,13 @@ rate(http_requests_total[5m]) by (path)
 - PromQL для агрегаций, Alertmanager для уведомлений (Slack/Email/Telegram).
 - Экспортеры: node_exporter, blackbox_exporter, php-fpm_exporter и др.
 - Стандарт де‑факто для Kubernetes/облачных инсталляций.
+
+## Примеры
+
+1. График RPS через `rate(http_requests_total[5m])`.
+2. Алерт: 5xx > 1% за 10 минут.
+
+## Доп. теория
+
+1. Pull‑модель упрощает масштабирование и контроль источников.
+2. Часто используют краткоживущие push‑метрики через Pushgateway.

@@ -106,10 +106,14 @@ $const = C::{strtoupper('id')}; // динамический доступ
 
 ## PHP 8.4
 - Property Hooks, asymmetric visibility для свойств.
-- Новый DOM API с HTML5, BcMath\Number (ООП arbitrary precision).
+- `#[\Deprecated]` для пользовательского кода.
+- Новый DOM API с HTML5 (`Dom\HTMLDocument`, `Dom\XMLDocument`), BcMath\Number (ООП arbitrary precision).
 - Новые функции массивов: `array_find/_key/any/all()`.
-- Lazy Objects, оптимизации `sprintf`, SHA-NI, создание объектов без скобок для чанинга.
-- Обновленный цикл поддержки: 2 года фичи + 2 года безопасности.
+- Подклассы PDO-драйверов (`Pdo\Pgsql`, `Pdo\MySql` и др.).
+- `new MyClass()->method()` без скобок.
+- `exit()` как обычная функция (включая строгую типизацию).
+- Lazy Objects (ленивые прокси-объекты).
+- Обновленный цикл поддержки: 2 года активной поддержки + 2 года безопасности.
 ```php
 public string $name {
     get => $this->raw;
@@ -119,3 +123,23 @@ $firstEven = array_find([1,2,3,4], fn($v)=>$v%2===0); // 2
 class Builder { public function value(): self { return $this; } }
 $obj = Builder::value; // без скобок для чанинга
 ```
+
+## Примеры
+```php
+// 8.4: array_find/array_any
+$nums = [1, 2, 3, 4];
+$firstEven = array_find($nums, static fn(int $v) => $v % 2 === 0); // 2
+$hasOdd = array_any($nums, static fn(int $v) => $v % 2 === 1); // true
+```
+
+```php
+// 8.4: property hooks + asymmetric visibility
+class User {
+    public private(set) string $email {
+        set => $this->email = strtolower($value);
+    }
+}
+```
+
+## Доп. теория
+- Политика поддержки: 2 года активной поддержки + 2 года security-fixes, всего 4 года на ветку.

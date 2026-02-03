@@ -1,5 +1,5 @@
 ## Вопрос: HTTP Client
-Версия: Symfony 7.x (LTS 6.4), синтаксис и подходы 6.4+.
+Версия: Symfony 8.0 (stable), LTS 7.4; PHP 8.4+ / 8.2+.
 
 ## Простой ответ
 встроенный клиент для запросов к внешним API с ретраями, таймаутами, пулами и удобным API.
@@ -18,3 +18,14 @@ class ExternalApiService {
 - Параллельные запросы: `HttpClient::create()->stream(...)`.  
 - Тесты: `MockHttpClient` или `HttpClientInterface` подмена.  
 - Настройки: base_uri, headers, timeout, retries через `framework.http_client`.
+
+## Примеры
+
+1. `request('GET', 'https://api.example.com')` + `toArray()`.
+2. Таймаут и заголовки через `framework.http_client`.
+3. `MockHttpClient` в тестах.
+
+## Доп. теория
+
+1. `toArray()` кидает исключение на 4xx/5xx.
+2. Для параллельных запросов используйте `stream()`.

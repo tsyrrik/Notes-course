@@ -1,21 +1,30 @@
 ## Вопрос: Request и Response
-Версия: Yii2 (ветка 2.0.x); Yii3 в разработке.
+Версия: Yii2 2.0.54; Yii3 релизнут (2025‑12‑31).
 
 ## Простой ответ
 Через `Yii::$app->request` — данные GET/POST, headers, cookies.
 
 ## Ответ
-## Вопрос: Как работать с запросом?
-Ответ: Через `Yii::$app->request` — данные GET/POST, headers, cookies.
 
-## Вопрос: Пример чтения параметров
-Ответ:
+Работа с запросом идёт через `Yii::$app->request` (GET/POST, headers, cookies).
+
+Пример чтения параметров:
 ```php
 $id = Yii::$app->request->get('id');
 $name = Yii::$app->request->post('name');
 ```
 
-## Вопрос: Как формировать ответ?
-Ответ:
+Как формировать ответ:
 - `Yii::$app->response->format = Response::FORMAT_JSON;`
 - `return ['ok' => true];`
+
+## Примеры
+
+1. `Yii::$app->request->isPost` для проверки метода.
+2. JSON‑ответ через `Response::FORMAT_JSON`.
+3. Отправка файла: `return Yii::$app->response->sendFile($path);`.
+
+## Доп. теория
+
+1. `request` и `response` — компоненты приложения, их можно конфигурировать.
+2. `response->format` влияет на сериализацию результатов action.

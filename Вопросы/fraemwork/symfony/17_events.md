@@ -1,5 +1,5 @@
 ## Вопрос: События и подписчики
-Версия: Symfony 7.x (LTS 6.4), синтаксис и подходы 6.4+.
+Версия: Symfony 8.0 (stable), LTS 7.4; PHP 8.4+ / 8.2+.
 
 ## Простой ответ
 EventDispatcher вызывает слушателей/подписчиков на события ядра и пользовательские.
@@ -22,3 +22,14 @@ class UserSubscriber implements EventSubscriberInterface {
     public function onRegistered(UserRegisteredEvent $e) { /* ... */ }
 }
 ```
+
+## Примеры
+
+1. Событие `kernel.response` добавляет заголовок.
+2. Пользовательское событие `UserRegisteredEvent` отправляет email.
+3. Подписчик на `kernel.exception` логирует ошибки.
+
+## Доп. теория
+
+1. Subscriber удобнее listener‑ов, когда нужно подписаться на несколько событий.
+2. Слишком много событий усложняет трассировку потока.

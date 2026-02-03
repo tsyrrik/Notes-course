@@ -1,5 +1,5 @@
 ## Вопрос: Blade: основы
-Версия: Laravel 11 (актуально; базовые принципы применимы к 10+).
+Версия: Laravel 12.x (актуальная), 11.x в security-fixes; PHP 8.2–8.4.
 
 ## Простой ответ
 Blade — простой шаблонизатор с наследованием, компонентами и автоматическим экранированием.
@@ -39,3 +39,14 @@ php artisan make:component Alert
 <x-alert type="success" message="Сохранено!" />
 <x-button class="btn-primary">Нажми</x-button>
 ```
+
+## Примеры
+
+1. `@extends('layout')` и `@section('content')`.
+2. `@foreach($users as $user)`.
+3. Компоненты: `<x-alert type="success"/>`.
+
+## Доп. теория
+
+1. Blade кэшируется в `storage/framework/views`.
+2. Вывод `{{ }}` экранируется по умолчанию.

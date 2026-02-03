@@ -51,3 +51,13 @@ XREADGROUP GROUP g c BLOCK 0 STREAMS stream >  # чтение из группы
 ZADD leaderboard 100 user1      # рейтинг
 INCR counter                    # атомарный счетчик
 ```
+
+## Примеры
+```bash
+SET user:1 "Alice" EX 3600
+GET user:1
+```
+
+## Доп. теория
+- Redis чаще используют как кэш/брокер, а не как primary‑БД.
+- Персистентность Redis — компромисс между скоростью и риском потери данных.

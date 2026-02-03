@@ -1,5 +1,5 @@
 ## Вопрос: Подготовка к продакшену
-Версия: Laravel 11 (актуально; базовые принципы применимы к 10+).
+Версия: Laravel 12.x (актуальная), 11.x в security-fixes; PHP 8.2–8.4.
 
 ## Простой ответ
 Шаги подготовки к продакшену: оптимизации, переменные среды, права, миграции.
@@ -20,3 +20,14 @@ php artisan migrate --force
 chmod -R 775 storage bootstrap/cache
 ```
 Очереди: `php artisan queue:restart` после деплоя; supervisor для воркеров.
+
+## Примеры
+
+1. `php artisan migrate --force`.
+2. `php artisan queue:restart`.
+3. `php artisan config:cache` после деплоя.
+
+## Доп. теория
+
+1. Деплой должен быть идемпотентным.
+2. Env‑переменные не хранятся в репозитории.

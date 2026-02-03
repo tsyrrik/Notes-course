@@ -1,15 +1,14 @@
 ## Вопрос: Assets
-Версия: Yii2 (ветка 2.0.x); Yii3 в разработке.
+Версия: Yii2 2.0.54; Yii3 релизнут (2025‑12‑31).
 
 ## Простой ответ
 Обертка для CSS/JS, которая регистрируется и подключается в layout.
 
 ## Ответ
-## Вопрос: Что такое AssetBundle?
-Ответ: Обертка для CSS/JS, которая регистрируется и подключается в layout.
 
-## Вопрос: Пример AssetBundle
-Ответ:
+AssetBundle — обёртка для CSS/JS, регистрируется в layout и управляет зависимостями.
+
+Пример AssetBundle:
 ```php
 class AppAsset extends yii\\web\\AssetBundle {
     public $basePath = '@webroot';
@@ -19,5 +18,16 @@ class AppAsset extends yii\\web\\AssetBundle {
 }
 ```
 
-## Вопрос: Как подключить?
-Ответ: `AppAsset::register($this);` в layout.
+Как подключить:
+`AppAsset::register($this);` в layout.
+
+## Примеры
+
+1. Подключение `AppAsset` в `layouts/main.php`.
+2. Указание `depends` для Bootstrap AssetBundle.
+3. Добавление версии файлов через `appendTimestamp`.
+
+## Доп. теория
+
+1. AssetBundle умеет описывать зависимости и порядок загрузки.
+2. Для продакшена полезна минимизация и объединение файлов.
